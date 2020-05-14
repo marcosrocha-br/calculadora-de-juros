@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(95, 180, 113);
+    margin:0 auto;
+    margin-right: auto;
+}
+header{
+    background-color: rgb(2, 56, 63);
+    width: 940px;
+    height: 100px;
+    border-style: ridge;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cabeçalho h1{
+    font-size: xx-large;
+    color: rgb(221, 224, 171);
+    text-align: center;
+    border-style: ridge;
+    border-radius: 5px;
+    margin: 12px auto;
+    margin-right: auto;
+    width: 500px;
+    height: 50px;
+    padding-top: 20px;
+}
+#cabeçalho a{
+    text-decoration: none;
+}
+nav{
+    width: 280px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: large;
+}
+#menu ul li{
+    display: inline;
+    border-style: ridge;
+    border-radius: 8px;
+    padding: 4px;
+    background-color:rgb(245, 240, 230);
+}
+
+#menu a{
+    text-decoration: none;
+    color:black;
+}
+#article{
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+#table{
+    background-color: rgb(245, 240, 230);
+    border-style: ridge;
+    width: 540px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    margin-top: 10px;
+    
+}
+#calc{
+    float: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#titulo{
+    text-align: center;
+    border-bottom: groove;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#resultado{
+    border-style: groove;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    height: 123px;
+    text-align: justify;
+    
+}
+#tb-jm{
+    margin-left: 10px;
+    margin-top: 20px;
+    line-height: 30px;
+
+}
+#re{
+    text-align: center;
+}
+#ex table{
+
+}
+#cap{
+    margin-right: 8px;
+

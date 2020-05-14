@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164327154-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164327154-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Calculadora simples para juros simples e compostos">
+    <meta name="keywords" content="financeiro, juros, calculadora, taxa, montante, simples e compostos">
+    <title>Calculadora de juros</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <header>
+        <div id="cabeçalho">
+        <a href="index.html"><h1>CALCULADORA DE JUROS</h1></a> 
+        </div>
+        
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Juros simples</a></li>
+            <li><a href="compostos.html">Juros compostos</a></li>
+        </ul>
+    </nav>
+    <article id="article">            
+            <div id="table">
+                <h4 id="titulo">JUROS COMPOSTOS</h4>
+                
+                    <table id="calc">
+                        <tr>                        <!--CAPITAL-->
+                            <td><p id="cap">Capital</p></td>
+                            <td><input type="number" value="" id="capital" autocomplete="off"></td>                        
+                        </tr>                    
+                        <tr>                        <!--TAXA-->
+                            <td><p id="tax">Taxa</p></td>
+                            <td><input type="number" value="" id="taxa" placeholder="%" autocomplete="off"></td>
+                        </tr>                                    
+                        <tr>                        <!--TEMPO-->                             
+                            <td><p id="temp">Tempo</p></td>
+                            <td><input type="number" value="1" id="tempo" autocomplete="off"></td>
+                        </tr>
+                        <tr>                        <!--BOTÕES--> 
+                            <td>
+                                <p></p>
+                            </td>
+                            <td id="botoes">                                                                                 
+                                <input type="button" value="Calcular" id="calcular">
+                                <input type="reset" value="Limpar" id="limpar">
+                            </td>
+                        </tr>
+                    </table>
+
+                <div id="resultado">
+                    <p id="re"><strong>Resultado</strong></p>
+                    <table id="tb-jm">
+                        <tr>
+                            <td>Juros</td>
+                            <td id="j">= R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Montante</td>
+                            <td id="m">= R$ 0,00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="ex"><!--EXPLICAÇÃO-->
+
+                </div>
+                
+            </div>
+        
+    </article>
+    <script type="text/javascript" src="js/juros-compostos.js" ></script>
+</body>
+</html>
