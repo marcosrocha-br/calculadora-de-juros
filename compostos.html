@@ -22,7 +22,6 @@
         <div id="cabeçalho">
         <a href="index.html"><h1>CALCULADORA DE JUROS</h1></a> 
         </div>
-        
     </header>
     <nav id="menu">
         <ul>
@@ -30,54 +29,50 @@
             <li><a href="compostos.html">Juros compostos</a></li>
         </ul>
     </nav>
-    <article id="article">            
-            <div id="table">
-                <h4 id="titulo">JUROS COMPOSTOS</h4>
+    <article>            
+            <div class="calculadora">
+                <h4>JUROS SIMPLES</h4>
                 
-                    <table id="calc">
-                        <tr>                        <!--CAPITAL-->
-                            <td><p id="cap">Capital</p></td>
-                            <td><input type="number" value="" id="capital" autocomplete="off"></td>                        
-                        </tr>                    
-                        <tr>                        <!--TAXA-->
-                            <td><p id="tax">Taxa</p></td>
-                            <td><input type="number" value="" id="taxa" placeholder="%" autocomplete="off"></td>
-                        </tr>                                    
-                        <tr>                        <!--TEMPO-->                             
-                            <td><p id="temp">Tempo</p></td>
-                            <td><input type="number" value="1" id="tempo" autocomplete="off"></td>
-                        </tr>
-                        <tr>                        <!--BOTÕES--> 
-                            <td>
-                                <p></p>
-                            </td>
-                            <td id="botoes">                                                                                 
-                                <input type="button" value="Calcular" id="calcular">
-                                <input type="reset" value="Limpar" id="limpar">
-                            </td>
-                        </tr>
-                    </table>
+                <table class="campo">
+                    <tr>                        <!--CAPITAL-->
+                        <td><p class="campoo capital">Capital</p></td>
+                        <td><input type="number" value="" id="capital" autocomplete="off"></td>                        
+                    </tr>                    
+                    <tr>                        <!--TAXA-->
+                        <td><p class="campo taxa">Taxa</p></td>
+                        <td><input type="number" value="" id="taxa" placeholder="%" autocomplete="off"></td>
+                    </tr>                                    
+                    <tr>                        <!--TEMPO-->                             
+                        <td><p class="campo tempo">Tempo</p></td>
+                        <td><input type="number" value="1" id="tempo" autocomplete="off"></td>
+                    </tr>
+                    <tr>                        <!--BOTÕES--> 
+                        <td>
+                            <p></p>
+                        </td>
+                        <td id="botoes">                                                                                 
+                            <input type="button" value="Calcular" id="calcular">
+                            <input type="reset" value="Limpar" id="limpar">
+                        </td>
+                    </tr>
+                </table>
 
-                <div id="resultado">
-                    <p id="re"><strong>Resultado</strong></p>
-                    <table id="tb-jm">
+                <div class="resultado">
+                    <p<strong>Resultado</strong></p>
+                    <table>
                         <tr>
                             <td>Juros</td>
-                            <td id="j">= R$ 0,00</td>
+                            <td class="juros">= R$ 0,00</td>
                         </tr>
                         <tr>
                             <td>Montante</td>
-                            <td id="m">= R$ 0,00</td>
+                            <td class="montante">= R$ 0,00</td>
                         </tr>
                     </table>
-                </div>
-                <div id="ex"><!--EXPLICAÇÃO-->
-
-                </div>
-                
+                </div>                
             </div>
-        
     </article>
-    <script type="text/javascript" src="js/juros-compostos.js" ></script>
+
+    <script type="text/javascript" src="js/juros-simples.js" ></script>
 </body>
 </html>
