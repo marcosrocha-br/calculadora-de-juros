@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(223, 245, 223);
+}
+        /*Cabeçalho*/
+.cabecalho{
+    background-color: rgb(110, 121, 110);
+    width: 90%;
+    max-width: 940px;
+    height: 100px;
+    margin: auto;
+    border-style: outset;
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25pt;
+    color: rgb(255, 249, 197);
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+h4{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+}
+.menu{
+    width: 320px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.menu ul li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;           
+    text-align: center;
+    align-items: center;
+}
+.menu span{
+    border-radius: 5px;
+    color: rgb(255, 249, 197);
+    background-color: rgb(125, 136, 125);
+    padding: 5px;
+    margin-left:5px;
+}
+.menu span:hover{
+    background-color: rgb(154, 170, 154);
+
+}
+        /*Painel*/
+.painel{
+    border-style: groove;
+    width: 680px;
+    height: 320px;
+    margin: auto;
+    background-color: whitesmoke;
+    font-size: 14pt;
+}        
+        /*Campos*/
+h4{
+    text-align: center;
+}
+.campos{
+    width: 45%;
+    height: 210px;
+    position: relative;
+    margin: auto;
+    margin-right: 40px;
+    float: left;
+    left: 20px;
+    border-style: groove;
+}
+.capital,.taxa,.tempo{
+    width: 50px;
+    height: 20px;
+    margin-top: 20px;   
+    border: none;
+}
+#capital, #taxa, #tempo{
+    width: 150px;
+    left: 25px;
+    margin-top: 20px;
+}
+        /*Resultado*/
+.resultado{
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 210px;
+    border-style: groove;
+}
+.resultado p{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.resultado table{
+    margin-left: auto;
+    margin-right: auto;
+}
+        /*Botões*/
+.botoes{
+    position: relative;
+    clear: left;
+    left: 99px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+        /*Tela de 680px*/
+@media only screen and (max-width:680px){
+    h1{
+        font-size: 23pt;
+    }
+    .painel{
+        width: 420px;
+        height: 520px;
+        padding-bottom: 20px;
+    }
+    .campos{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .capital,.taxa,.tempo{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    #capital,#taxa,#tempo{
+        margin-left: 30px;
+        margin-top: 30px;   
+    }
+    .resultado{
+        width: 90%;
+        margin-top: 20px;   
+        margin-left: 20px;
+    }
+    .botoes{
+        position: relative;
+        left: 127px;
+        margin-bottom: 5px;
+    }
+}

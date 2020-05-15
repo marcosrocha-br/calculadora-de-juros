@@ -12,32 +12,33 @@ function calcular(){
     var taxa = document.getElementById('taxa')
     var tempo = document.getElementById('tempo')
 
-                //Conversão
+            //Conversão
     var c = Number(capital.value)
     var i = Number(taxa.value)
     var t = Number(tempo.value)
 
-                //Fórmulas
-    
-   
+            //Fórmulas
     var m = c*(1+i/100)**t    
-    var j = m-c   
-    
-    var juros = document.getElementById('j')
-    var montante = document.getElementById('m')
+    var j = m-c 
+
+    var juros = document.getElementsByClassName('juros')[0];
+    var montante = document.getElementsByClassName('montante')[0];
 
     juros.innerHTML=`= ${j.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`
     montante.innerHTML=`= ${m.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`
-    
 }
             //Função limpar
 function limpar(){
     document.getElementById('capital').value="";
     document.getElementById('taxa').value="";
     document.getElementById('tempo').value="1";
-    var juros = document.getElementById('j')
+    var juros = document.getElementsByClassName('juros')[0];
     juros.innerHTML="= R$ 0,00"
-    var montante = document.getElementById('m')
+    var montante = document.getElementsByClassName('montante')[0];
     montante.innerHTML="= R$ 0,00"
 }
+
+
+
+
 

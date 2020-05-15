@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164327154-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-164327154-1');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="Calculadora simples para juros simples e compostos">
+    <meta name="viewport" content="width=device-width">
     <meta name="keywords" content="financeiro, juros, calculadora, taxa, montante, simples e compostos">
+
     <title>Calculadora de juros</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
         <div class="cabecalho">
-        <a href="index.html"><h1>CALCULADORA DE JUROS</h1></a> 
+        <a href="index.html"><h1>calculadora de juros</h1></a> 
         </div>
     </header>
     <nav class="menu">
         <ul>
-            <li><a href="index.html">Juros simples</a></li=>
-            <li><a href="compostos.html">Juros compostos</a></li>
+            <li><a href="index.html"><span>Juros simples</span></a></li=>
+            <li><a href="compostos.html"><span>Juros compostos</span></a></li>
         </ul>
     </nav>
     <article>            
-            <div class="calculadora">
-                <h4>JUROS SIMPLES</h4>
-               
-                <table class="campo">
-                    <tr>                        <!--CAPITAL-->
-                        <td><p class="campo capital">Capital</p></td>
-                        <td><input type="number" value="" id="capital" autocomplete="off"></td>                        
-                    </tr>                    
-                    <tr>                        <!--TAXA-->
-                        <td><p class="campo taxa">Taxa</p></td>
-                        <td><input type="number" value="" id="taxa" placeholder="%" autocomplete="off"></td>
-                    </tr>                                    
-                    <tr>                        <!--TEMPO-->                             
-                        <td><p class="campo tempo">Tempo</p></td>
-                        <td><input type="number" value="1" id="tempo" autocomplete="off"></td>
-                    </tr>
-                </table>
-                                                <!--BOTÕES-->
-                <div class="botoes">
-                    <input type="button" value="Calcular" id="calcular">
-                    <input type="reset" value="Limpar" id="limpar">
+            <div class="painel">
+                <h4>juros simples</h4>
+               <div class="campos">
+                    <table>
+                        <tr>                        <!--CAPITAL-->
+                            <td class="campos capital">Capital</td>
+                            <td><input type="number" value="" id="capital" autocomplete="off"></td>                        
+                        </tr>                    
+                        <tr>                        <!--TAXA-->
+                            <td class="campos taxa">Taxa</td>
+                            <td><input type="number" value="" id="taxa" placeholder="%" autocomplete="off"></td>
+                        </tr>                                    
+                        <tr>                        <!--TEMPO-->                             
+                            <td class="campos tempo">Tempo</td>
+                            <td><input type="number" value="1" id="tempo" autocomplete="off"></td>
+                        </tr>
+                    </table>
+                                                    <!--BOTÕES-->
+                    <div class="botoes">
+                        <input type="button" value="Calcular" id="calcular">
+                        <input type="reset" value="Limpar" id="limpar">
+                    </div>
                 </div>
-                                                <!--RESULTADO-->
+                                                    <!--RESULTADO-->
                 <div class="resultado">
-                    <p<strong>Resultado</strong></p>
+                    <p>Resultado</p>
                     <table>
                         <tr>
                             <td>Juros</td>

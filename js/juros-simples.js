@@ -38,3 +38,5 @@ function limpar(){
     montante.innerHTML="= R$ 0,00"
 }
 
+
+
