@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(223, 245, 223);
+    background-color: rgb(186, 190, 187);
 }
         /*Cabeçalho*/
 .cabecalho{
-    background-color: rgb(110, 121, 110);
+    background-color: rgb(74, 85, 74);
     width: 90%;
     max-width: 940px;
     height: 100px;
@@ -15,7 +15,7 @@ h1{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25pt;
-    color: rgb(255, 249, 197);
+    color: rgb(252, 245, 184);
     margin-top: 30px;
     text-transform: uppercase;
 }
@@ -43,7 +43,7 @@ a{
 .menu span{
     border-radius: 5px;
     color: rgb(255, 249, 197);
-    background-color: rgb(125, 136, 125);
+    background-color: rgb(95, 107, 95);
     padding: 5px;
     margin-left:5px;
 }
@@ -59,6 +59,8 @@ a{
     margin: auto;
     background-color: whitesmoke;
     font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
 }        
         /*Campos*/
 h4{
