@@ -24,8 +24,8 @@ function calcular(){
     var juros = document.getElementsByClassName('juros')[0];
     var montante = document.getElementsByClassName('montante')[0];
 
-    juros.innerHTML=`= ${j.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`
-    montante.innerHTML=`= ${m.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`
+    juros.innerHTML=`= ${j.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`;
+    montante.innerHTML=`= ${m.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`;
 }
             //Função limpar
 function limpar(){
@@ -33,10 +33,7 @@ function limpar(){
     document.getElementById('taxa').value="";
     document.getElementById('tempo').value="1";
     var juros = document.getElementsByClassName('juros')[0];
-    juros.innerHTML="= R$ 0,00"
+    juros.innerHTML="= R$ 0,00";
     var montante = document.getElementsByClassName('montante')[0];
-    montante.innerHTML="= R$ 0,00"
+    montante.innerHTML="= R$ 0,00";
 }
-
-
-
