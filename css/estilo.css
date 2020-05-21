@@ -6,7 +6,6 @@ body{
     background-color: rgb(74, 85, 74);
     width: 90%;
     max-width: 940px;
-    height: 100px;
     margin: auto;
     border-style: outset;
     border-radius: 8px;
@@ -16,7 +15,6 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 25pt;
     color: rgb(252, 245, 184);
-    margin-top: 30px;
     text-transform: uppercase;
 }
 h4{
@@ -67,58 +65,51 @@ h4{
     text-align: center;
 }
 .campos{
-    width: 45%;
-    height: 210px;
     position: relative;
+    width: 45%;
+    height: 205px;
     margin: auto;
     margin-right: 40px;
     float: left;
     left: 20px;
     border-style: groove;
 }
-.capital,.taxa,.tempo{
-    width: 50px;
-    height: 20px;
-    margin-top: 20px;   
-    border: none;
-}
-#capital, #taxa, #tempo{
-    width: 150px;
-    left: 25px;
-    margin-top: 20px;
+.campos table{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding:40px 0;
 }
         /*Resultado*/
 .resultado{
     position: relative;
     float: left;
     width: 45%;
-    height: 210px;
+    height: 205px;
     border-style: groove;
 }
 .resultado p{
     text-align: center;
     text-transform: uppercase;
-    margin-top: 40px;
+    
 }
 .resultado table{
     margin-left: auto;
     margin-right: auto;
+    padding:40px 0;
+    margin-top: -20px;
 }
         /*Botões*/
 .botoes{
     position: relative;
     clear: left;
     left: 99px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    margin-top: -20px;
 }
-        /*Tela de 680px*/
-@media only screen and (max-width:680px){
-    h1{
-        font-size: 23pt;
-    }
+        /*Tela de 660px*/
+@media only screen and (max-width:660px){
     .painel{
-        width: 420px;
+        width: 350px;
         height: 520px;
         padding-bottom: 20px;
         margin-left: auto;
@@ -129,13 +120,8 @@ h4{
         margin-left: auto;
         margin-right: auto;
     }
-    .capital,.taxa,.tempo{
-        margin-left: 30px;
-        margin-top: 30px;
-    }
-    #capital,#taxa,#tempo{
-        margin-left: 30px;
-        margin-top: 30px;   
+    .campos tr td{
+        margin-top: 10x;
     }
     .resultado{
         width: 90%;
@@ -144,7 +130,7 @@ h4{
     }
     .botoes{
         position: relative;
-        left: 127px;
         margin-bottom: 5px;
+        margin-right: 10%;
     }
 }
