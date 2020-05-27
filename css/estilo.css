@@ -106,6 +106,9 @@ h4{
     left: 99px;
     margin-top: -20px;
 }
+input[type="button"]{
+    color:black;
+}
         /*Tela de 660px*/
 @media only screen and (max-width:660px){
     .painel{
