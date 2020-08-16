@@ -41,13 +41,14 @@ a{
 }
 .menu span{
     border-radius: 5px;
-    color: rgb(255, 249, 197);
-    background-color: rgb(95, 107, 95);
+    color: rgb(250, 247, 200);
+    background-color: rgb(74, 85, 74);
     padding: 5px;
     margin-left:5px;
 }
 .menu span:hover{
-    background-color: rgb(154, 170, 154);
+    background-color: rgb(114, 139, 114);
+    color: rgb(252, 252, 176);
 
 }
         /*Painel*/

@@ -7,6 +7,7 @@
     <meta name="keywords" content="financeiro, juros, calculadora, taxa, montante, simples e compostos">
     <title>Calcule Juros</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/calculos.js" ></script>
 </head>
 <body>
     <header>
@@ -20,28 +21,28 @@
             <li><a href="compostos.html"><span>Juros compostos</span></a></li>
         </ul>
     </nav>
-    <article>            
+    <content>            
             <div class="painel">
                 <h4>juros simples</h4>
                <div class="campos">
-                    <table>
+                    <table onkeydown="entersimples(event)">
                         <tr>                        <!--CAPITAL-->
                             <td>Capital</td>
-                            <td><input type="number" value="" id="capital" autocomplete="off" autofocus></td>                        
+                            <td><input type="number" id="capital" autocomplete="off" autofocus></td>                        
                         </tr>                    
                         <tr>                        <!--TAXA-->
                             <td>Taxa</td=>
-                            <td><input type="number" value="" id="taxa" placeholder="%" autocomplete="off"></td>
+                            <td><input type="number" id="taxa" placeholder="%" autocomplete="off"></td>
                         </tr>                                    
                         <tr>                        <!--TEMPO-->                             
                             <td>Tempo</td>
-                            <td><input type="number" value="1" id="tempo" autocomplete="off"></td>
+                            <td><input type="number" id="tempo" value="1" autocomplete="off"></td>
                         </tr>
                     </table>
                                                     <!--BOTÕES-->
                     <div class="botoes">
-                        <input type="button" value="Calcular" id="calcular">
-                        <input type="button" value="Limpar" id="limpar">
+                        <input type="button" value="Calcular" id="calcular" onclick="calcsimples()">
+                        <input type="button" value="Limpar" onclick="limpar();">
                     </div>
                 </div>
                                                     <!--RESULTADO-->
@@ -59,9 +60,6 @@
                     </table>
                 </div>                
             </div>
-    </article>
-
-    <script type="text/javascript" src="js/juros-simples.js" ></script>
-    
+    </content>
 </body>
 </html>
